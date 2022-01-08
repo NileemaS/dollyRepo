@@ -7,48 +7,77 @@
             margin: 0 auto;
             font: .9em/1.2 Arial, Helvetica, sans-serif;
         }
-        h1{
-            background-color:aqua;
-            padding: 10px;
+        h1{            
+            width:100%;
+            background-color:aqua;          
             text-shadow: 3px 3px 3px 1px black;
             text-align: center;
         }
-        .box{
-                float: left;
-                margin-right: 15px;
-                width: 125px;
-                height: 125px;
-                border-radius: 5px;
-                background-color: rgb(207,232,220);
-            }
-
         .picsize{
-            width: 120px;
-            height: 120px;
-            object-fit: contain;
+            width: 100px;
+            height: 100px;
+            border: 5px solid black;
+            object-fit: fill;
         }
-
-        .wrapper {
-            background-color: rgb(79,185,227);
-            padding: 10px;
+        .wrapper {           
+            width: 100%;
+            background-color: violet;
+            display:flex;            
+        }
+        .positioned{
+            position:absolute;
+            background: crimson;
             color: #fff;
-            overflow: auto;
+            top: 50%;
+            left: 20%;
+            padding: 20px;
         }
-
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        nav li {
+            float:left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        a:hover{
+            color: yellow;
+        }
+    
     </style>
+    <title>Doll World</title>
     </head>
     <body>
-        <h1>Welcome to Doll World</h1>
-        <div class="wrapper">
-            
-            <div class="box">
-                <img class="picsize" src="doll.jpg"/>  
+        <header>
+            <div>        
+                <h1>Welcome to Nileema's Page</h1>
+                <nav>
+                  <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Meet the team</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Search</a></li>
+                  </ul>
+                </nav>
+            </div> 
+        </header>        
+
+            <div  class="wrapper">
+                <img class="picsize" src="mypic.png"/>  
+                <p style="margin-left: 10px;"> This is my great project </p>
             </div>
-            <p> This is my great project </p>
-    
-            <p>   Hello how are you    </p> 
         
-        </div>
+        <div  class="positioned">   Hello how are you</div>
         
     </body>
 </html>
